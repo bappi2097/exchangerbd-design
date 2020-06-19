@@ -2,32 +2,3 @@ body {
   background-color: rgb(15, 20, 40);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-nav {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-nav a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-nav a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #4caf50;
-}
-
-@media screen and (max-width: 500px) {
-  nav a {
-    float: none;
-    display: block;
-  }
-}

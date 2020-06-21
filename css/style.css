@@ -21,6 +21,7 @@ body {
 
 .nav > .nav-header {
   display: inline;
+  margin: 0px 25px;
 }
 
 .nav > .nav-header > .nav-title {
@@ -37,6 +38,7 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
+  margin: 0px 25px;
   font-size: 18px;
 }
 
@@ -52,12 +54,33 @@ body {
 }
 
 .nav > .nav-links > .is-active {
-  background-color: rgb(139, 141, 150);
+  background-color: rgb(18, 29, 83);
   pointer-events: none;
+  padding: 10px 8px;
+  border-radius: 5px;
+}
+.nav > .nav-links > .login {
+  color: #333;
+  background: rgb(255, 195, 0);
+  border-radius: 50px;
+  padding: 3px 12px;
+}
+
+.nav > .nav-links > .login:hover {
+  background-color: rgb(185, 146, 17);
 }
 
 .nav > #nav-check {
   display: none;
+}
+
+.notice-box {
+  margin: auto;
+  width: 35%;
+  background-color: rgb(125, 127, 139);
+  border-radius: 25px;
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -100,9 +123,19 @@ body {
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
+    margin: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+    margin: 0px;
+  }
+  .notice-box {
+    margin: auto;
+    width: 100%;
+    background-color: rgb(125, 127, 139);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
   }
 }

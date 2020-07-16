@@ -1,0 +1,85 @@
+scroll-horizontal {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+/* .rates-div .row {
+  margin: 0;
+  padding: 50px 50px;
+} */
+
+.rates-div {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  overflow-y: hidden;
+  display: flex;
+  overflow-x: auto;
+  margin: 0 75px;
+}
+
+.rate-box {
+  float: left;
+  background-color: #eee;
+  width: 180px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 20px 30px;
+  padding: 5px 10px;
+  text-align: center;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: right;
+  -webkit-animation-timing-function: linear;
+}
+
+.rate-box:hover {
+  -webkit-animation-play-state: paused;
+}
+
+.buy-sell {
+  background-color: rgb(207, 255, 94);
+  width: 160px;
+  height: 120px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.tbl {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.tbl-head {
+  border-bottom: 2px solid rgb(176, 208, 100);
+}
+
+.tbl-row-1-left {
+  border-bottom: 2px solid rgb(176, 208, 100);
+  border-right: 2px solid rgb(176, 208, 100);
+}
+
+.tbl-row-1-right {
+  border-bottom: 2px solid rgb(176, 208, 100);
+  border-left: 2px solid rgb(176, 208, 100);
+}
+
+.tbl-row-2-left {
+  border-right: 2px solid rgb(176, 208, 100);
+}
+.tbl-row-2-right {
+  border-left: 2px solid rgb(176, 208, 100);
+}
+
+.reserve {
+  color: rgb(111, 190, 47);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.reserve-amount {
+  /* color: rgb(111, 190, 47); */
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}

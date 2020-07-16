@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exchanger BD</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/tab.css">
+</head>
+
+<body onload="load()">
+  <div class="navc">
+    <div class="navc-header">
+      <div class="navc-title">
+        <a href="#">EXCHANGER BD</a>
+      </div>
+    </div>
+    <div class="navc-btn" onclick="togglenav()">
+      <label for="navc-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="navc-links" id="nav">
+      <a href="#" class="is-active"> Home </a>
+      <a href="#"> How to EXCHANGE </a>
+      <a href="#"> ABOUT </a>
+      <a href="#"> FAQ </a>
+      <a href="#" class="login"> Login </a>
+      <a href="#" class="reg"> Registration </a>
+    </div>
+  </div>
+  <div class="mainc">
+    <div class="notice-box">
+      <p class="notice">
+        Notice Notice Notice Notice
+      </p>
+    </div>
+    <form action="#" method="post">
+      <div class="box">
+        <div class="order-box">
+          <div class="order-sub-box">
+            <label for="bd-wallet">Send Us</label>
+            <select class="custom-select is-primary selectc">
+              <option selected>Choose</option>
+            </select>
+          </div>
+          <div class="order-sub-box">
+            <label for="bd-wallet">Amount</label>
+            <input type="text" name="bd_amount" id="" class="bd-amount" placeholder="&#2547;" />
+          </div>
+          <div class="order-sub-box">
+            <img src="logo/equal.png" alt="==" />
+          </div>
+          <div class="order-sub-box">
+            <label for="bd-wallet">Receive In</label>
+            <select class="custom-select is-primary selectc">
+              <option selected>Choose</option>
+            </select>
+          </div>
+          <div class="order-sub-box">
+            <label for="bd-wallet">Amount</label>
+            <input type="text" name="bd_amount" id="" class="bd-amount" placeholder="&#36;" />
+          </div>
+        </div>
+      </div>
+      <div class="btnc">
+        <input type="submit" value="PLACE ORDER" class="btn btn-cust" />
+      </div>
+    </form>
+    <div class="rates-div" id="autoscroll">
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+      <div class="rate-box">
+        <div class="buy-sell">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th class="tbl-head" colspan="2">Webmoney</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tbl-row-1-left">BUY</td>
+                <td class="tbl-row-1-right">SELL</td>
+              </tr>
+              <tr>
+                <td class="tbl-row-2-left">85</td>
+                <td class="tbl-row-2-right">93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reserve">Reserve</p>
+        <p class="reserve-amount">2000</p>
+      </div>
+    </div>
+    <div class="review">
+      <div class="rowr">
+        <h2>Feedback</h2>
+      </div>
+      <div class="rowr" id="feedback">
+        <div class="review-box">
+          <div class="review-head">
+            <div class="user-img left">
+              <img src="logo/admin-1.jpg" alt="User Name">
+            </div>
+            <div class="user-name left">
+              <span>Alexander Pierce</span>
+            </div>
+          </div>
+          <div class="review-star">
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="review-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam ea tenetur eum, quod vel esse,nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-head">
+            <div class="user-img left">
+              <img src="logo/admin-2.jpg" alt="User Name">
+            </div>
+            <div class="user-name left">
+              <span>Norman</span>
+            </div>
+          </div>
+          <div class="review-star">
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+          </div>
+          <div class="review-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam ea tenetur eum, quod vel esse,nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-head">
+            <div class="user-img left">
+              <img src="logo/admin-3.jpg" alt="User Name">
+            </div>
+            <div class="user-name left">
+              <span>Nora</span>
+            </div>
+          </div>
+          <div class="review-star">
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="review-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam ea tenetur eum, quod vel esse,nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-head">
+            <div class="user-img left">
+              <img src="logo/admin-4.jpg" alt="User Name">
+            </div>
+            <div class="user-name left">
+              <span>John</span>
+            </div>
+          </div>
+          <div class="review-star">
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+          </div>
+          <div class="review-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam ea tenetur eum, quod vel esse,nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-head">
+            <div class="user-img left">
+              <img src="logo/admin-5.jpg" alt="User Name">
+            </div>
+            <div class="user-name left">
+              <span>Nadia</span>
+            </div>
+          </div>
+          <div class="review-star">
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star glow"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="review-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam ea tenetur eum, quod vel esse,nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.nulla
+            eveniet voluptatum aut asperiores. Ducimus culpa dolor eos vel iusto omnis distinctio recusandae.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3 class="footer-logo">Exchanger <span>BD</span></h3>
+      <h2 class="footer-service">Service Time</h2>
+      <h2 class="footer-service">9PM to 11 PM</h2>
+      </p>
+      <p class="footer-company-name">Exchanger BD © 2020</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker  mobile-small"></i>
+        <p><span class="footer-language">Language</span> English</p>
+      </div>
+      <div>
+        <i class="fa fa-phone mobile-small"></i>
+        <p>01305186101, 01726257333</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope mobile-small"></i>
+        <p><a href="mailto:exchangerbdmail@gmail.com">exchangerbdmail@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p style="font-size: 17px; color: white;">How To Exchange</p>
+      <video width="120%" controls style="border-radius: 20px">
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="js/autodivscroll.js"></script>
+  <script type="text/javascript">
+    new AutoDivScroll("autoscroll", 40);
+  </script>
+  <script type="text/javascript">
+    new AutoDivScroll("feedback", 30);
+  </script>
+</body>
+
+</html>

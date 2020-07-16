@@ -1,0 +1,25 @@
+.Feedback1{
+	height: 250px;
+	width: 350px;
+	background-color: #114F60;
+	border-radius: 10px;
+	margin-left: 20px;
+	border-left: 8px solid white;
+}
+
+.head{
+	margin-left: 20px;
+	font-size: 35px;
+	color: white;
+	padding-top:10px;
+}
+.feedback3{
+	font-size: 22px;
+	color: #27FFAE;
+	padding-left:20px;
+	padding-right: 10px;
+
+}
+.star{
+	margin-left: 20px;
+}

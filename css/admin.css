@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 85px;
+}
+.admin-header-row {
+  display: block;
+}
+.admin-header-6 {
+  float: left;
+  width: 70%;
+}
+
+.admin-header-7 {
+  float: left;
+  width: 30%;
+}
+.admin-header-6 .logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(161, 158, 158);
+  font-size: 28px;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+.admin-header-user {
+  float: left;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.admin-header-user > div > img {
+  border-radius: 50%;
+  width: 50px;
+}
+.admin-header-user > div {
+  float: left;
+}
+
+.admin-header-user > .admin-header-name {
+  /* float: left; */
+  padding: 15px 20px;
+}
+
+.admin-header-user span {
+  display: subgrid;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+  color: rgb(228, 28, 83);
+}
+
+.admin-header-logout {
+  float: left;
+  width: 50%;
+  padding-top: 25px;
+}
+
+.admin-header-logout > a {
+  display: block;
+  color: white;
+  background-color: rgb(255, 100, 132);
+  text-decoration: none;
+  border-radius: 7px;
+  width: 50px;
+  padding: 5px 15px;
+  box-shadow: 0px 0px 6px rgb(161, 158, 158);
+}
+
+.admin-header-logout > a:hover {
+  box-shadow: 0px 2px 6px rgb(161, 158, 158);
+}
+
+.sidebar {
+  position: absolute;
+  width: 18%;
+  background-color: rgb(135, 233, 229);
+  min-height: 100%;
+  border-radius: 20px;
+}
+.admin-sidebar-bar {
+  padding: 15px;
+  text-align: right;
+  color: white;
+  font-size: 22px;
+}

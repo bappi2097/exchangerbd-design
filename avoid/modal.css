@@ -1,0 +1,112 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  display: none;
+}
+.modal > .modal-content {
+  margin: auto;
+  margin-top: 7%;
+  width: 50%;
+  background-color: white;
+  height: auto;
+}
+.modal > .modal-content > .modal-header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal > .modal-content > .modal-header > .modal-header-title {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.modal > .modal-content > .modal-header > .close {
+  float: right;
+  font-size: 22px;
+  color: white;
+  background-color: rgb(17, 77, 95);
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0;
+}
+
+.modal > .modal-content > .modal-body {
+  color: rgb(120, 154, 164);
+  background-color: rgb(17, 77, 95);
+  padding: 40px 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal > .modal-content > .modal-body > form {
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+}
+.modal > .modal-content > .modal-body > form > .form-input {
+  padding-bottom: 30px;
+  display: block;
+}
+.modal > .modal-content > .modal-body > form > .form-input > .username {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgb(120, 154, 164);
+  color: white;
+  width: 90%;
+  height: 25px;
+  font-size: 17px;
+}
+
+.modal > .modal-content > .modal-body > form > .form-input > .password {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgb(120, 154, 164);
+  color: white;
+  width: 90%;
+  height: 25px;
+  font-size: 17px;
+}
+.modal > .modal-content > .modal-body > form > .form-input > .fa-eye {
+  float: right;
+  margin-left: -20px;
+  overflow: hidden;
+  position: absolute;
+  color: black;
+}
+
+.modal > .modal-content > .modal-body > form > .form-input > .fa-eye-slash {
+  float: right;
+  margin-left: -20px;
+  overflow: hidden;
+  color: black;
+  position: absolute;
+}
+.modal > .modal-content > .modal-body > form > .remember-forget {
+  font-size: 16px;
+  color: white;
+}
+.modal > .modal-content > .modal-body > form > .remember-forget > a {
+  font-size: 16px;
+  color: white;
+  float: right;
+}
+.modal > .modal-content > .modal-body > form > .login-btn {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.modal > .modal-content > .modal-body > form > .login-btn > input {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+}

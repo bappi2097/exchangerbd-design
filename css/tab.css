@@ -151,9 +151,7 @@
     width: 80%;
   }
 
-  .order-sub-box img {
-    width: 70px;
-    height: 70px;
+  .order-sub-box .img {
     margin: auto;
     transform: rotate(90deg);
   }

@@ -120,12 +120,7 @@ body {
   margin: 50px 17% 0 17%;
   box-shadow: 0 0 14px aliceblue;
 }
-@media (max-width: 1024px) {
-  .order-box {
-    width: 86%;
-    margin: 50px 7% 0 7%;
-  }
-}
+
 .order-sub-box {
   float: left;
   /* display: inline-block; */
@@ -149,10 +144,11 @@ body {
   height: 50px;
 }
 
-.order-sub-box img {
-  width: 85px;
+.order-sub-box .img {
   margin: auto;
-  margin-top: 62px;
+  text-align: center;
+  margin-top: 68px;
+  font-size: 40px;
 }
 
 .order-sub-box .bd-amount {
@@ -642,4 +638,11 @@ div.dataTables_wrapper div.dataTables_info,
 
 .footer-language {
   font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .order-box {
+    width: 86%;
+    margin: 50px 7% 0 7%;
+  }
 }

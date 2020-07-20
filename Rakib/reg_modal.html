@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <div class="modal" id="registration_modal">
+      <div class="modal-content modal-content-reg">
+        <div class="modal-header">
+          <span class="modal-header-title">Registration</span>
+          <i class="fa fa-times close" id="close"></i>
+        </div>
+        <div class="modal-body modal-body-reg">
+          <form class="form-reg" action="" method="post">
+            <div class="form-input form-input-reg">
+              <label for="first_name">First Name</label><br />
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                class="first_name"
+                required
+              />
+            </div>
+
+            <div class="form-input form-input-reg">
+              <label for="last_name">Last Name</label><br />
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                class="last_name"
+                required
+              />
+            </div>
+            <div class="form-input-reg">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email"
+                required
+              />
+            </div>
+            <div class="form-input-reg">
+              <label for="phone">Phone</label><br />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="phone"
+                required
+              />
+            </div>
+            <div class="form-input-reg">
+              <label for="username">Username</label><br />
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="username"
+                required
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
